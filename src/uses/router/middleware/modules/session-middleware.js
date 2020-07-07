@@ -1,10 +1,10 @@
-import Middleware from '../middleware'
+import {Middleware} from '../middleware'
 
-export default class SessionMiddleware extends Middleware {
+export class SessionMiddleware extends Middleware {
     handle($middlewareManager) {
-        this.log.send('session', 'middleware')
+        this.log('session', 'middleware')
 
         this.session().start()
-        super.handle($middlewareManager)
+        this.next()
     }
 }

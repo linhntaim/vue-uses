@@ -1,3 +1,3 @@
-export default function (plugin) {
+export function use(plugin) {
     return {plugin}
 }

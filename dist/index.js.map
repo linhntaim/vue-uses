@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/index.js"],"names":[],"mappings":"6LAAA,0BACA,sRACA","sourcesContent":["export {use} from './use'\r\nexport * from './uses/i18n'\r\nexport * from './uses/router'"],"file":"index.js"}

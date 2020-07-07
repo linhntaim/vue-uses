@@ -1,32 +1,27 @@
-import Middleware from '../middleware'
+import {Middleware} from '../middleware'
 
-export default class AppMiddleware extends Middleware {
-    constructor({app, log}) {
-        super({app, log})
+export class AppMiddleware extends Middleware {
+    constructor(htmlInitializingClass = 'app-initializing') {
+        super()
 
         this.initializing = true
+        this.htmlInitializingClass = htmlInitializingClass
     }
 
     handle($middlewareManager) {
-        this.log.send('app', 'middleware')
+        this.log('app', 'middleware')
 
-        if ($middlewareManager.before) {
-            this.appReady(() => {
-                this.log.send('created', 'app')
+        if (this.runBefore()) {
+            if (this.initializing) {
+                this.initializing = false
+                document.getElementById(this.htmlInitializingClass).remove()
+            }
 
-                if (this.initializing) {
-                    this.initializing = false
-                    document.getElementById('app-initializing').remove()
-                }
-
-                this.app().$bus.emit('page.loading')
-
-                super.handle($middlewareManager)
-            })
-        } else if ($middlewareManager.after) {
-            this.app().$bus.emit('page.loaded')
-
-            super.handle($middlewareManager)
+            this.bus().emit('page.loading')
+        } else if (this.runAfter()) {
+            this.bus().emit('page.loaded')
         }
+
+        this.next()
     }
 }

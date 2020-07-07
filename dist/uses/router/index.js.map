@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../src/uses/router/index.js"],"names":[],"mappings":"yMAAA,ySACA","sourcesContent":["export * from './middleware'\r\nexport {use as routerUse} from './use'\r\n"],"file":"index.js"}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/use.js"],"names":["use","plugin"],"mappings":"sFAAO,QAASA,CAAAA,GAAT,CAAaC,MAAb,CAAqB,CACxB,MAAO,CAACA,MAAM,CAANA,MAAD,CACV","sourcesContent":["export function use(plugin) {\r\n    return {plugin}\r\n}"],"file":"use.js"}

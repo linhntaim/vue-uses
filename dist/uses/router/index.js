@@ -1,0 +1,2 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:true});var _exportNames={routerUse:true};Object.defineProperty(exports,"routerUse",{enumerable:true,get:function get(){return _use.use}});var _middleware=require("./middleware");Object.keys(_middleware).forEach(function(key){if(key==="default"||key==="__esModule")return;if(Object.prototype.hasOwnProperty.call(_exportNames,key))return;Object.defineProperty(exports,key,{enumerable:true,get:function get(){return _middleware[key]}})});var _use=require("./use");
+//# sourceMappingURL=index.js.map

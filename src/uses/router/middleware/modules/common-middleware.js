@@ -1,17 +1,22 @@
-import {intervalCaller, log, timeoutCaller, ui} from '../../../utils'
-import Middleware from '../middleware'
+import {Middleware} from '../middleware'
 
-export default class CommonMiddleware extends Middleware {
-    handle($middlewareManager) {
-        log.send('common', 'middleware')
+export class CommonMiddleware extends Middleware {
+    constructor(beforeCallback = null, afterCallback = null) {
+        super()
 
-        if ($middlewareManager.before) {
-            timeoutCaller.clear()
-            intervalCaller.clear()
-            super.handle($middlewareManager)
-        } else if ($middlewareManager.after) {
-            ui.scrollToTop()
-            super.handle($middlewareManager)
+        this.beforeCallback = beforeCallback
+        this.afterCallback = afterCallback
+    }
+
+    handle() {
+        this.log('common', 'middleware')
+
+        if (this.runBefore()) {
+            this.beforeCallback && this.beforeCallback()
+        } else if (this.runAfter()) {
+            this.afterCallback && this.afterCallback()
         }
+
+        this.next()
     }
 }

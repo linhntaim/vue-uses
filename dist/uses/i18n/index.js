@@ -1,0 +1,2 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:true});Object.defineProperty(exports,"LocaleManager",{enumerable:true,get:function get(){return _localeManager.LocaleManager}});Object.defineProperty(exports,"i18Use",{enumerable:true,get:function get(){return _use.use}});var _localeManager=require("./locale-manager");var _use=require("./use");
+//# sourceMappingURL=index.js.map

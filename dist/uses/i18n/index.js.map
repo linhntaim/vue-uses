@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../src/uses/i18n/index.js"],"names":[],"mappings":"6RAAA,+CACA","sourcesContent":["export {LocaleManager} from './locale-manager'\r\nexport {use as i18Use} from './use'\r\n\r\n"],"file":"index.js"}
