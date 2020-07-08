@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../src/uses/vuex/index.js"],"names":[],"mappings":"qKAAA","sourcesContent":["export {use as vuexUse} from './use'"],"file":"index.js"}

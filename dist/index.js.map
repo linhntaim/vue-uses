@@ -1,1 +1,1 @@
-{"version":3,"sources":["../src/index.js"],"names":[],"mappings":"6LAAA,0BACA,sRACA","sourcesContent":["export {use} from './use'\r\nexport * from './uses/i18n'\r\nexport * from './uses/router'"],"file":"index.js"}
+{"version":3,"sources":["../src/index.js"],"names":[],"mappings":"6LAAA,0BACA,sRACA,8RACA","sourcesContent":["export {use} from './use'\r\nexport * from './uses/i18n'\r\nexport * from './uses/router'\r\nexport * from './uses/vuex'"],"file":"index.js"}

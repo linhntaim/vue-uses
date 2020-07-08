@@ -1,0 +1,2 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.use=use;var _vuex=_interopRequireDefault(require("vuex"));function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{"default":obj}}function use(modules){return{plugin:_vuex["default"],attached:function attached(){return new _vuex["default"].Store({modules:modules})}}}
+//# sourceMappingURL=use.js.map
