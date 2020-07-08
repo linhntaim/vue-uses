@@ -10,7 +10,7 @@ export class PromiseMiddleware extends Middleware {
         this.promisedCallback = promisedCallback
     }
 
-    handle($middlewareManager) {
+    handle() {
         this.log('promise', 'middleware')
 
         this.promisingCallback(this)

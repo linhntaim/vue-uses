@@ -1,14 +1,13 @@
 export class LocaleManager {
-    constructor(app, localePath, defaultLocale = 'en') {
+    constructor(app, importLocaleCallback, defaultLocale = 'en') {
         this.app = app
         this.loadedLocales = [defaultLocale]
-        this.localePath = localePath
+        this.importLocaleCallback = importLocaleCallback
     }
 
     set(locale) {
         return new Promise(resolve => {
             const i18n = this.app.$i18n
-            const {log, ui} = this.app.$utils
 
             if (i18n.locale === locale) {
                 resolve(locale)
@@ -16,6 +15,8 @@ export class LocaleManager {
             }
 
             const apply = () => {
+                const {log, ui} = this.app.$utils
+
                 log.send('changed from ' + i18n.locale + ' to ' + locale, 'locale')
 
                 i18n.locale = locale
@@ -28,7 +29,7 @@ export class LocaleManager {
                 return
             }
 
-            import(`${this.localePath}/${locale}`).then(m => {
+            this.importLocaleCallback(locale).then(m => {
                 i18n.setLocaleMessage(locale, m.default)
                 this.loadedLocales.push(locale)
                 resolve(apply(locale))

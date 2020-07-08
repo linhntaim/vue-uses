@@ -6,6 +6,7 @@ export {
 export {
     routerUse,
     Middleware,
+    AppMiddleware,
     CommonMiddleware,
     PromiseMiddleware,
     SessionMiddleware,

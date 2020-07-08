@@ -1,4 +1,5 @@
 export {Middleware} from './middleware'
+export {AppMiddleware} from './modules/app-middleware'
 export {CommonMiddleware} from './modules/common-middleware'
 export {PromiseMiddleware} from './modules/promise-middleware'
 export {SessionMiddleware} from './modules/session-middleware'

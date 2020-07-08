@@ -8,7 +8,7 @@ export class AppMiddleware extends Middleware {
         this.htmlInitializingClass = htmlInitializingClass
     }
 
-    handle($middlewareManager) {
+    handle() {
         this.log('app', 'middleware')
 
         if (this.runBefore()) {
