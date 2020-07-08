@@ -12,10 +12,7 @@ export class AppMiddleware extends Middleware {
         this.log('app', 'middleware')
 
         if (this.runBefore()) {
-            if (this.initializing) {
-                this.initializing = false
-                document.getElementById(this.htmlInitializingClass).remove()
-            }
+            this.removeInitializing()
 
             this.bus().emit('page.loading')
         } else if (this.runAfter()) {
@@ -23,5 +20,14 @@ export class AppMiddleware extends Middleware {
         }
 
         this.next()
+    }
+
+    removeInitializing() {
+        if (this.initializing) {
+            this.initializing = false
+
+            const e = document.getElementById(this.htmlInitializingClass)
+            if (e) e.remove()
+        }
     }
 }
