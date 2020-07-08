@@ -7,7 +7,7 @@ export class LocaleManager {
 
     set(locale) {
         return new Promise(resolve => {
-            const i18n = this.app.$i18n
+            const i18n = this.app.instance.$i18n
 
             if (i18n.locale === locale) {
                 resolve(locale)
@@ -15,7 +15,7 @@ export class LocaleManager {
             }
 
             const apply = () => {
-                const {log, ui} = this.app.$utils
+                const {log, ui} = this.app.instance.$utils
 
                 log.send('changed from ' + i18n.locale + ' to ' + locale, 'locale')
 
