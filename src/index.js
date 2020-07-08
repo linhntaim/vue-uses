@@ -10,5 +10,12 @@ export {
     CommonMiddleware,
     PromiseMiddleware,
     SessionMiddleware,
+    session,
 } from './uses/router'
-export {vuexUse} from './uses/vuex'
+export {
+    vuexUse,
+    mapState,
+    mapGetters,
+    mapMutations,
+    mapActions,
+} from './uses/vuex'

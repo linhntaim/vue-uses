@@ -1,1 +1,1 @@
-{"version":3,"sources":["../../../src/uses/vuex/index.js"],"names":[],"mappings":"qKAAA","sourcesContent":["export {use as vuexUse} from './use'"],"file":"index.js"}
+{"version":3,"sources":["../../../src/uses/vuex/index.js"],"names":[],"mappings":"6kBAAA,0BACA","sourcesContent":["export {use as vuexUse} from './use'\r\nexport {mapState, mapGetters, mapMutations, mapActions} from 'vuex'"],"file":"index.js"}
