@@ -1,6 +1,6 @@
 {
     "name": "@dsquare-gbu/vue-uses",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "description": "To wrap plugins before using it in Vue application",
     "main": "dist/index.js",
     "scripts": {
@@ -32,7 +32,7 @@
         "nyc": "^15.1.0"
     },
     "dependencies": {
-        "@dsquare-gbu/vue-router": "^1.0.2",
+        "@dsquare-gbu/vue-router": "^1.0.4",
         "@dsquare-gbu/vue-utils": "^1.0.5",
         "vue-i18n": "^8.18.2",
         "vuex": "^3.5.1"
