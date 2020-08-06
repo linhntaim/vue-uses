@@ -6,7 +6,7 @@ const it = mocha.it
 const expect = chai.expect
 chai.should()
 
-describe('vue-app', function () {
+describe('vue-uses', function () {
     describe('unit tests', function () {
     })
 })
