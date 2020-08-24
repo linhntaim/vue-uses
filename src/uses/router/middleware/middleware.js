@@ -1,4 +1,4 @@
-import {session, Middleware as BaseMiddleware} from '@dsquare-gbu/vue-router'
+import {session, Middleware as BaseMiddleware} from '@linhntaim/vue-router'
 
 export class Middleware extends BaseMiddleware {
     store() {

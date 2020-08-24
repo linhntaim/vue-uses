@@ -1,5 +1,5 @@
 import {Middleware} from '../middleware'
-import {PromiseManager} from '@dsquare-gbu/vue-utils'
+import {PromiseManager} from '@linhntaim/vue-utils'
 
 export class PromiseMiddleware extends Middleware {
     constructor(promisingCallback, promisedCallback) {

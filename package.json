@@ -1,5 +1,5 @@
 {
-    "name": "@dsquare-gbu/vue-uses",
+    "name": "@linhntaim/vue-uses",
     "version": "1.0.11",
     "description": "To wrap plugins before using it in Vue application",
     "main": "dist/index.js",
@@ -10,7 +10,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git@git-gbu.japaneast.cloudapp.azure.com:base/vue-uses.git"
+        "url": "https://github.com/linhntaim/vue-uses.git"
     },
     "keywords": [
         "vue",
@@ -19,7 +19,7 @@
         "application",
         "management"
     ],
-    "author": "Nguyen Tuan Linh <tuanlinh.nguyen@dsquare.com.vn>",
+    "author": "Nguyen Tuan Linh <contact@linhntaim.com> (https://linhntaim.com)",
     "license": "MIT",
     "devDependencies": {
         "@babel/cli": "^7.10.5",
@@ -32,8 +32,8 @@
         "nyc": "^15.1.0"
     },
     "dependencies": {
-        "@dsquare-gbu/vue-router": "^1.0.7",
-        "@dsquare-gbu/vue-utils": "^1.0.30",
+        "@linhntaim/vue-router": "^1.0.8",
+        "@linhntaim/vue-utils": "^1.0.30",
         "vue-i18n": "^8.20.0",
         "vuex": "^3.5.1"
     }
