@@ -1,3 +1,6 @@
-export function use(plugin) {
-    return {plugin}
+export function use(plugin, options = null) {
+    return {
+        plugin,
+        options,
+    }
 }

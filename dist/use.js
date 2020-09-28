@@ -1,2 +1,2 @@
-"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.use=use;function use(plugin){return{plugin:plugin}}
+"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.use=use;function use(plugin){var options=arguments.length>1&&arguments[1]!==undefined?arguments[1]:null;return{plugin:plugin,options:options}}
 //# sourceMappingURL=use.js.map
