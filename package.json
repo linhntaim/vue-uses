@@ -1,6 +1,6 @@
 {
     "name": "@linhntaim/vue-uses",
-    "version": "1.0.11",
+    "version": "1.0.12",
     "description": "To wrap plugins before using it in Vue application",
     "main": "dist/index.js",
     "scripts": {
