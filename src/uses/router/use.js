@@ -5,7 +5,7 @@ export function use(routes, beforeMiddleware = [], afterMiddleware = []) {
         plugin: Router,
         attached: new Router({
             mode: 'history',
-            base: process.env.BASE_URL,
+            base: process.env.BASE_ROUTER_URL ? process.env.BASE_ROUTER_URL : process.env.BASE_URL,
             routes: routes,
             beforeDefault: beforeMiddleware,
             afterDefault: afterMiddleware,
