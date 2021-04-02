@@ -1,4 +1,4 @@
-import Router from '@dsquare-gbu/vue-router'
+import {Router} from '@dsquare-gbu/vue-router'
 
 export function use(routes, beforeMiddleware = [], afterMiddleware = []) {
     return {
