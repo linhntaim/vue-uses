@@ -1,4 +1,4 @@
-import Router from '@linhntaim/vue-router'
+import {Router} from '@linhntaim/vue-router'
 
 export function use(routes, beforeMiddleware = [], afterMiddleware = []) {
     return {
