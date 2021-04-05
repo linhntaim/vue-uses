@@ -27,7 +27,7 @@ export class AppMiddleware extends Middleware {
             this.initializing = false
 
             const e = document.getElementById(this.htmlInitializingClass)
-            if (e) e.remove()
+            if (e) typeof e.remove === 'function' ? e.remove() : e.parentNode.removeChild(e)
         }
     }
 }
