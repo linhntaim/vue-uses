@@ -1,11 +1,11 @@
 import {Middleware} from '../middleware'
 
 export class AppMiddleware extends Middleware {
-    constructor(htmlInitializingClass = 'app-initializing') {
+    constructor(htmlInitializingId = 'app-initializing') {
         super()
 
         this.initializing = true
-        this.htmlInitializingClass = htmlInitializingClass
+        this.htmlInitializingCId = htmlInitializingId
     }
 
     handle() {
@@ -26,7 +26,7 @@ export class AppMiddleware extends Middleware {
         if (this.initializing) {
             this.initializing = false
 
-            const e = document.getElementById(this.htmlInitializingClass)
+            const e = document.getElementById(this.htmlInitializingCId)
             if (e) typeof e.remove === 'function' ? e.remove() : e.parentNode.removeChild(e)
         }
     }
