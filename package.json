@@ -1,6 +1,6 @@
 {
     "name": "@linhntaim/vue-uses",
-    "version": "1.4.4",
+    "version": "1.4.10",
     "description": "To wrap plugins before using it in Vue application",
     "main": "dist/index.js",
     "scripts": {
@@ -32,8 +32,8 @@
         "nyc": "^15.1.0"
     },
     "dependencies": {
-        "@linhntaim/vue-router": "^1.4.0",
-        "@linhntaim/vue-utils": "^1.4.1",
+        "@linhntaim/vue-router": "^1.4.3",
+        "@linhntaim/vue-utils": "^1.4.6",
         "vue-i18n": "^8.24.2",
         "vuex": "^3.6.2"
     }
